@@ -1,0 +1,94 @@
+@media screen and (max-width: 1050px) {
+
+    p {
+        text-align: justify;
+    }
+
+    section #profile-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section #profile-card .card-image img {
+        height: auto;
+        width: 100%;
+    }
+
+    section #profile-card .card-image {
+        margin: 0;
+    }
+
+    section #container-skills .container-list {
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    #section-skills #container-skills .container-list .container-list-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .percent {
+        margin-bottom: 15px;
+    }
+
+    #section-skills #container-skills .container-list .container-list-item .bars {
+        position: static;
+        display: flex;
+        flex-direction: column-reverse;
+
+        text-align: center;
+        align-items: center;
+    }
+
+    .container .container-list {
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    p, .percent {
+        font-size: 120%;
+    }
+
+    .main-text h1 {
+        font-size: 350%;
+    }
+
+    .main-text p {
+        font-size: 120%;
+    }
+
+    .main-text button {
+        font-size: 100%;
+    }
+
+    section .title h1 {
+        font-size: 300%;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    p {
+        font-size: 100%;
+    }
+
+    .main-text h1 {
+        font-size: 300%;
+    }
+
+    section .title h1 {
+        font-size: 250%;
+    }
+
+    #main-section {
+        grid-template-areas: 
+        "h h h h h"
+        ". m m m ."
+        ". f f f .";
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
